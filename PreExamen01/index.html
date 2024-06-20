@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Examen 01</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Expendedora</h1>
+        <form id="form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+            <br><br>
+            <label for="product">Selecciona un producto:</label>
+            <select id="product" required>
+                <option value="">--Seleccionar--</option>
+                <option value="A">Producto A - $270</option>
+                <option value="B">Producto B - $340</option>
+                <option value="C">Producto C - $390</option>
+            </select>
+            <br><br>
+            <button type="submit">Seleccionar</button>
+        </form>
+        <div id="payment-section" class="hidden">
+            <h2>Ingresa monedas</h2>
+            <button type="button" onclick="addCoin(10)">Añadir $10</button>
+            <button type="button" onclick="addCoin(50)">Añadir $50</button>
+            <button type="button" onclick="addCoin(100)">Añadir $100</button>
+            <p>Total ingresado: $<span id="total-amount">0</span></p>
+            <div class="result">
+                <p id="result-message"></p>
+                <p id="change-message"></p>
+            </div>
+        </div>
+        <button id="end-session" class="hidden" onclick="reporte()">Finalizar sesión</button>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
