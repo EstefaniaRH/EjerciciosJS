@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Sample</title>
+</head>
+<body>
+    
+    <my-text-input></my-text-input>
+    <input-sample></input-sample>
+
+    <my-element>
+        <p slot="two">Include me in slot "two". </p>
+    </my-element>
+
+    <my-element>
+        <p slot="one">Include me in slot "one". </p>
+        <p slot="nope">Esto no se va a agregar </p>
+        <p> En el componente no se definió slot por default, no se incluye</p>
+    </my-element>
+
+    <script type="module" src="componentes/main.js"></script>
+</body>
+</html>

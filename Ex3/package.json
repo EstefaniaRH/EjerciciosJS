@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "lit": "^3.1.4"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.5"
+  },
+  "name": "ex3",
+  "version": "1.0.0",
+  "description": "Ejercicio3",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "keywords": [
+    "JS",
+    "lit",
+    "element",
+    "web",
+    "components"
+  ],
+  "author": "EstefaniaRH",
+  "license": "ISC"
+}

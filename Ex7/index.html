@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slots Styles</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h2>Estilos en slots</h2>   
+    <slots-elements>
+        <p>Slotted content</p>
+        <span slot="hi">Slotted span inside a div</span>
+    </slots-elements>
+
+    <p>Cambiando fuera del shadow tree</p>
+    <slots-elements>
+        <div>Stylable with ::sloted()</div>
+    </slots-elements>
+
+    <slots-elements>
+        <div><p>Not stylable with ::sloted()</p></div>
+    </slots-elements>
+
+    <p>-----</p>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
